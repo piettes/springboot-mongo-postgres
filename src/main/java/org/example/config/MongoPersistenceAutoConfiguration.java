@@ -22,22 +22,22 @@ import static java.util.Collections.singletonList;
 @EnableConfigurationProperties
 public class MongoPersistenceAutoConfiguration {
 
-    @Value("${ecoligo.datasource2.username}")
+    @Value("${app.datasource2.username}")
     private String username;
 
-    @Value("${ecoligo.datasource2.password}")
+    @Value("${app.datasource2.password}")
     private String password;
 
-    @Value("${ecoligo.datasource2.database}")
+    @Value("${app.datasource2.database}")
     private String db;
 
-    @Value("${ecoligo.datasource2.authentication-database}")
+    @Value("${app.datasource2.authentication-database}")
     private String authenticationDatabase;
 
-    @Value("${ecoligo.datasource2.port}")
+    @Value("${app.datasource2.port}")
     private int port;
 
-    @Value("${ecoligo.datasource2.host}")
+    @Value("${app.datasource2.host}")
     private String host;
 
 

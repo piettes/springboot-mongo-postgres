@@ -22,13 +22,13 @@ import javax.sql.DataSource;
         transactionManagerRef = "postgresTransactionManager")
 public class PostgresPersistenceAutoConfiguration {
 
-    @Value("${ecoligo.datasource1.url}")
+    @Value("${app.datasource1.url}")
     private String datasourceUrl;
 
-    @Value("${ecoligo.datasource1.username}")
+    @Value("${app.datasource1.username}")
     private String username;
 
-    @Value("${ecoligo.datasource1.password}")
+    @Value("${app.datasource1.password}")
     private String password;
 
     @Primary
