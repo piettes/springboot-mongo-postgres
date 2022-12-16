@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: "postgres:15.1-alpine"
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - ./postgresdata:/var/lib/postgresql/data
+  mongodb:
+    image: "mongo:6.0.3"
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongodbdata:/data/db
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/mongo-init.js:ro

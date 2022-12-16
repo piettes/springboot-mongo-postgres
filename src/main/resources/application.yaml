@@ -1,0 +1,12 @@
+ecoligo:
+  datasource1:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: password
+  datasource2:
+    authentication-database: admin
+    username: admin
+    password: admin
+    database: db
+    port: 27017
+    host: localhost
